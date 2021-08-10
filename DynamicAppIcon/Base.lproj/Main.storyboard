@@ -16,29 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMO-yN-8XO">
-                                <rect key="frame" x="90" y="425" width="234" height="46"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="Change App Icon">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeAppIconButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edY-aj-jR6"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="1ka-eP-KT6">
+                                <rect key="frame" x="78" y="386" width="258" height="124"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMO-yN-8XO">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="46"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Change App Icon 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeAppIconButtonPressed1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDs-5R-NMk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-xw-pjq">
+                                        <rect key="frame" x="0.0" y="78" width="258" height="46"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Change App Icon 2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeAppIconButtonPressed2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mg3-6S-yJB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YMO-yN-8XO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0NX-xH-PVs"/>
-                            <constraint firstItem="YMO-yN-8XO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WcG-Q6-ns0"/>
+                            <constraint firstItem="1ka-eP-KT6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IwL-u9-DFB"/>
+                            <constraint firstItem="1ka-eP-KT6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Obt-Nv-tke"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="changeAppIconButton" destination="YMO-yN-8XO" id="an3-rU-UXc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
