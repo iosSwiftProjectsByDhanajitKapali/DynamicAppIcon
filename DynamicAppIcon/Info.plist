@@ -76,6 +76,7 @@
             <key>UIPrerenderedIcon</key>
             <false/>
         </dict>
+        <!--Adding Alternate Icons-->
         <key>CFBundleAlternateIcons</key>
         <dict>
             <key>AppIcon-2</key>

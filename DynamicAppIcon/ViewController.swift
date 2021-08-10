@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBAction func changeAppIconButtonPressed(_ sender: UIButton) {
         print("Changing the App Icon")
         if UIApplication.shared.supportsAlternateIcons{
-            UIApplication.shared.setAlternateIconName("AppIcon-3") { error in
+            UIApplication.shared.setAlternateIconName("AppIcon-2") { error in
                 if let error = error {
                     print(error.localizedDescription)
                     print(UIApplication.shared.alternateIconName ?? "Primary")
