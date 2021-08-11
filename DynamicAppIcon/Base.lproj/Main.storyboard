@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="1ka-eP-KT6">
-                                <rect key="frame" x="78" y="386" width="258" height="124"/>
+                                <rect key="frame" x="39.5" y="347" width="335" height="202"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMO-yN-8XO">
-                                        <rect key="frame" x="0.0" y="0.0" width="258" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="46"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
@@ -32,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-xw-pjq">
-                                        <rect key="frame" x="0.0" y="78" width="258" height="46"/>
+                                        <rect key="frame" x="0.0" y="78" width="335" height="46"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
@@ -41,6 +41,18 @@
                                         </state>
                                         <connections>
                                             <action selector="changeAppIconButtonPressed2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mg3-6S-yJB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPI-k5-z8b">
+                                        <rect key="frame" x="0.0" y="156" width="335" height="46"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Download &amp; set App Icon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downloadAndSetAppIconButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ItI-hA-kWG"/>
                                         </connections>
                                     </button>
                                 </subviews>
